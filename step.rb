@@ -14,7 +14,7 @@ begin
 
   s3 = Aws::S3::Resource.new(region: params.region, credentials: Aws::Credentials.new(params.client_id, params.secret))
 
-  obj = s3.bucket(params.bucket).object(params.filename)
+  obj = s3.bucket(params.bucket).object(params.object)
 
   obj.delete({})
 rescue => ex
