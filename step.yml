@@ -1,0 +1,61 @@
+title: Secure S3 Delete
+summary: Secure S3 Delete
+description: |-
+  Secure S3 Delete
+website: https://github.com/DamienBitrise/bitrise-secure-s3-delete
+source_code_url: https://github.com/DamienBitrise/bitrise-secure-s3-delete
+support_url: https://github.com/DamienBitrise/bitrise-secure-s3-delete/issues
+
+project_type_tags:
+  - ios
+  - android
+  - cordova
+  - ionic
+  - react-native
+  - flutter
+
+type_tags:
+  - utility
+
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ".IsCI"
+
+inputs:
+- client_id: 
+  opts:
+    title: S3 Client ID
+    summary: S3 Client ID
+    description: S3 Client ID
+    is_required: true
+    is_sensitive: true
+- secret: 
+  opts:
+    title: S3 Secret
+    summary: S3 Secret
+    description: S3 Secret
+    is_required: true
+    is_sensitive: true
+- bucket: 
+  opts:
+    title: S3 Bucket
+    summary: S3 Bucket
+    description: S3 Bucket
+    is_required: true
+    is_sensitive: true
+- region: 
+  opts:
+    title: S3 Region
+    summary: S3 Region
+    description: S3 Region
+    is_required: true
+    is_sensitive: true
+- filename: 
+  opts:
+    title: S3 Filename
+    summary: S3 Filename
+    description: S3 Filename
+    is_required: true
+    is_sensitive: false
+outputs:
