@@ -8,7 +8,7 @@ begin
   params.print
   params.validate
 
-  if params.bucket.to_s.empty? || params.region.to_s.empty? || params.client_id.to_s.empty?|| params.secret.to_s.empty? || params.object.to_s.empty?  || params.filename.to_s.empty? 
+  if params.bucket.to_s.empty? || params.region.to_s.empty? || params.client_id.to_s.empty?|| params.secret.to_s.empty? || params.object.to_s.empty?
     raise 'Error: Not all fields set cannot proceed!'
   end
 
